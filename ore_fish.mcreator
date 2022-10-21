@@ -1,0 +1,136 @@
+{
+  "mod_elements": [
+    {
+      "name": "IronFish",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_fish"
+    },
+    {
+      "name": "IronScale",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_scale"
+    },
+    {
+      "name": "Growing",
+      "type": "potioneffect",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growing"
+    },
+    {
+      "name": "OreFishConfig",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_fish_config",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "FishTickProc",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fish_tick_proc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FishRightClick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fish_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "growtime",
+      "type": "number",
+      "scope": "global",
+      "value": "400.0"
+    },
+    {
+      "name": "droptime",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "entity.ore_fish.iron_fish": "Iron Fish",
+      "effect.growing": "Growing",
+      "item.ore_fish.iron_scale": "Iron Scale",
+      "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "ore_fish",
+    "modName": "Ore Fish",
+    "version": "1.0.0",
+    "author": "isaac, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "com.oreoredstone.orefish",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
