@@ -27,6 +27,7 @@ import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.network.IPacket;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -34,10 +35,12 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.FollowMobGoal;
+import net.minecraft.entity.ai.goal.BreedGoal;
 import net.minecraft.entity.ai.controller.MovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -163,10 +166,12 @@ public class IronFishEntity extends OreFishModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
-			this.goalSelector.addGoal(2, new FollowMobGoal(this, (float) 1, 10, 5));
-			this.goalSelector.addGoal(3, new RandomSwimmingGoal(this, 1, 40));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(1, new BreedGoal(this, 1));
+			this.goalSelector.addGoal(2, new TemptGoal(this, 1, Ingredient.fromItems(Blocks.KELP.asItem()), false));
+			this.goalSelector.addGoal(3, new PanicGoal(this, 2));
+			this.goalSelector.addGoal(4, new FollowMobGoal(this, (float) 1, 10, 5));
+			this.goalSelector.addGoal(5, new RandomSwimmingGoal(this, 1, 40));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
 		}
 
 		@Override
