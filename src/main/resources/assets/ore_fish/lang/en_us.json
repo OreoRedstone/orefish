@@ -1,6 +1,9 @@
 {
   "entity.ore_fish.iron_fish": "Iron Fish",
   "effect.growing": "Growing",
+  "item.ore_fish.oak_fish_spawn_egg": "Iron Fish Spawn Egg",
   "item.ore_fish.iron_scale": "Iron Scale",
-  "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg"
+  "item.ore_fish.oak_scale": "Oak Scale",
+  "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
+  "entity.ore_fish.oak_fish": "Iron Fish"
 }
