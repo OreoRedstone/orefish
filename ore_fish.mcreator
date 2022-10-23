@@ -5,7 +5,7 @@
       "type": "livingentity",
       "sortid": 1,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iron_fish",
       "path": "~/IronFish"
     },
@@ -14,7 +14,7 @@
       "type": "item",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iron_scale",
       "path": "~/IronFish"
     },
@@ -23,7 +23,7 @@
       "type": "potioneffect",
       "sortid": 5,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "growing"
     },
     {
@@ -31,7 +31,7 @@
       "type": "item",
       "sortid": 14,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oak_scale",
       "path": "~/OakFish"
     },
@@ -40,7 +40,7 @@
       "type": "livingentity",
       "sortid": 15,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oak_fish",
       "path": "~/OakFish"
     },
@@ -49,7 +49,7 @@
       "type": "procedure",
       "sortid": 16,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oak_fish_tick",
       "metadata": {
         "dependencies": [
@@ -82,7 +82,7 @@
       "type": "procedure",
       "sortid": 17,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "oak_fish_right_click",
       "metadata": {
         "dependencies": [
@@ -103,7 +103,7 @@
       "type": "procedure",
       "sortid": 18,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iron_fish_tick",
       "metadata": {
         "dependencies": []
@@ -115,7 +115,7 @@
       "type": "procedure",
       "sortid": 19,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iron_fish_right_click",
       "metadata": {
         "dependencies": []
@@ -127,7 +127,7 @@
       "type": "livingentity",
       "sortid": 20,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gold_fish",
       "path": "~/GoldFish"
     },
@@ -136,7 +136,7 @@
       "type": "item",
       "sortid": 21,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gold_scale",
       "path": "~/GoldFish"
     },
@@ -145,7 +145,7 @@
       "type": "procedure",
       "sortid": 22,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gold_fish_right_click",
       "metadata": {
         "dependencies": []
@@ -157,7 +157,7 @@
       "type": "procedure",
       "sortid": 23,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "gold_fish_tick",
       "metadata": {
         "dependencies": []
@@ -169,7 +169,7 @@
       "type": "livingentity",
       "sortid": 24,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ardite_fish",
       "path": "~/ArditeFish"
     },
@@ -178,7 +178,7 @@
       "type": "procedure",
       "sortid": 25,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ardite_fish_right_click",
       "metadata": {
         "dependencies": []
@@ -190,7 +190,7 @@
       "type": "procedure",
       "sortid": 26,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ardite_fish_tick",
       "metadata": {
         "dependencies": []
@@ -202,9 +202,51 @@
       "type": "item",
       "sortid": 27,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "ardite_scale",
       "path": "~/ArditeFish"
+    },
+    {
+      "name": "CoalFish",
+      "type": "livingentity",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "coal_fish",
+      "path": "~/CoalFish"
+    },
+    {
+      "name": "CoalFishRightClick",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "coal_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CoalFish"
+    },
+    {
+      "name": "CoalFishTick",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "coal_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CoalFish"
+    },
+    {
+      "name": "CoalScale",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "coal_scale",
+      "path": "~/CoalFish"
     }
   ],
   "variable_elements": [
@@ -229,12 +271,15 @@
       "effect.growing": "Growing",
       "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
       "item.ore_fish.gold_fish_spawn_egg": "Gold Fish Spawn Egg",
+      "item.ore_fish.coal_fish_spawn_egg": "Coal Fish Spawn Egg",
       "item.ore_fish.iron_scale": "Iron Scale",
       "item.ore_fish.oak_scale": "Oak Scale",
       "entity.ore_fish.oak_fish": "Oak Fish",
       "item.ore_fish.gold_scale": "Iron Scale",
       "item.ore_fish.ardite_fish_spawn_egg": "Ardite Fish Spawn Egg",
+      "entity.ore_fish.coal_fish": "Coal Fish",
       "item.ore_fish.ardite_scale": "Iron Scale",
+      "item.ore_fish.coal_scale": "Iron Scale",
       "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
       "entity.ore_fish.gold_fish": "Gold Fish"
     }
@@ -256,6 +301,10 @@
       },
       {
         "name": "OakFish",
+        "children": []
+      },
+      {
+        "name": "CoalFish",
         "children": []
       }
     ]
