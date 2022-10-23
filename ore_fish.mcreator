@@ -5,8 +5,9 @@
       "type": "livingentity",
       "sortid": 1,
       "compiles": true,
-      "locked_code": true,
-      "registry_name": "iron_fish"
+      "locked_code": false,
+      "registry_name": "iron_fish",
+      "path": "~/IronFish"
     },
     {
       "name": "IronScale",
@@ -14,7 +15,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "iron_scale"
+      "registry_name": "iron_scale",
+      "path": "~/IronFish"
     },
     {
       "name": "Growing",
@@ -25,23 +27,13 @@
       "registry_name": "growing"
     },
     {
-      "name": "OreFishConfig",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ore_fish_config",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "OakScale",
       "type": "item",
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oak_scale"
+      "registry_name": "oak_scale",
+      "path": "~/OakFish"
     },
     {
       "name": "OakFish",
@@ -49,14 +41,15 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "oak_fish"
+      "registry_name": "oak_fish",
+      "path": "~/OakFish"
     },
     {
       "name": "OakFishTick",
       "type": "procedure",
       "sortid": 16,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "oak_fish_tick",
       "metadata": {
         "dependencies": [
@@ -81,14 +74,15 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/OakFish"
     },
     {
       "name": "OakFishRightClick",
       "type": "procedure",
       "sortid": 17,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "oak_fish_right_click",
       "metadata": {
         "dependencies": [
@@ -101,29 +95,32 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/OakFish"
     },
     {
       "name": "IronFishTick",
       "type": "procedure",
       "sortid": 18,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "iron_fish_tick",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/IronFish"
     },
     {
       "name": "IronFishRightClick",
       "type": "procedure",
       "sortid": 19,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "iron_fish_right_click",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/IronFish"
     },
     {
       "name": "GoldFish",
@@ -131,7 +128,8 @@
       "sortid": 20,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gold_fish"
+      "registry_name": "gold_fish",
+      "path": "~/GoldFish"
     },
     {
       "name": "GoldScale",
@@ -139,29 +137,74 @@
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gold_scale"
+      "registry_name": "gold_scale",
+      "path": "~/GoldFish"
     },
     {
       "name": "GoldFishRightClick",
       "type": "procedure",
       "sortid": 22,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "gold_fish_right_click",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/GoldFish"
     },
     {
       "name": "GoldFishTick",
       "type": "procedure",
       "sortid": 23,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "gold_fish_tick",
       "metadata": {
         "dependencies": []
-      }
+      },
+      "path": "~/GoldFish"
+    },
+    {
+      "name": "ArditeFish",
+      "type": "livingentity",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ardite_fish",
+      "path": "~/ArditeFish"
+    },
+    {
+      "name": "ArditeFishRightClick",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ardite_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ArditeFish"
+    },
+    {
+      "name": "ArditeFishTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ardite_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ArditeFish"
+    },
+    {
+      "name": "ArditeScale",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ardite_scale",
+      "path": "~/ArditeFish"
     }
   ],
   "variable_elements": [
@@ -181,21 +224,41 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.ore_fish.gold_scale": "Iron Scale",
+      "entity.ore_fish.ardite_fish": "Ardite Fish",
       "entity.ore_fish.iron_fish": "Iron Fish",
       "effect.growing": "Growing",
       "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
       "item.ore_fish.gold_fish_spawn_egg": "Gold Fish Spawn Egg",
       "item.ore_fish.iron_scale": "Iron Scale",
       "item.ore_fish.oak_scale": "Oak Scale",
-      "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
       "entity.ore_fish.oak_fish": "Oak Fish",
+      "item.ore_fish.gold_scale": "Iron Scale",
+      "item.ore_fish.ardite_fish_spawn_egg": "Ardite Fish Spawn Egg",
+      "item.ore_fish.ardite_scale": "Iron Scale",
+      "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
       "entity.ore_fish.gold_fish": "Gold Fish"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "ArditeFish",
+        "children": []
+      },
+      {
+        "name": "GoldFish",
+        "children": []
+      },
+      {
+        "name": "IronFish",
+        "children": []
+      },
+      {
+        "name": "OakFish",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "ore_fish",

@@ -1,12 +1,15 @@
 {
-  "item.ore_fish.gold_scale": "Iron Scale",
+  "entity.ore_fish.ardite_fish": "Ardite Fish",
   "entity.ore_fish.iron_fish": "Iron Fish",
   "effect.growing": "Growing",
   "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
   "item.ore_fish.gold_fish_spawn_egg": "Gold Fish Spawn Egg",
   "item.ore_fish.iron_scale": "Iron Scale",
   "item.ore_fish.oak_scale": "Oak Scale",
-  "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
   "entity.ore_fish.oak_fish": "Oak Fish",
+  "item.ore_fish.gold_scale": "Iron Scale",
+  "item.ore_fish.ardite_fish_spawn_egg": "Ardite Fish Spawn Egg",
+  "item.ore_fish.ardite_scale": "Iron Scale",
+  "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
   "entity.ore_fish.gold_fish": "Gold Fish"
 }
