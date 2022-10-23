@@ -61,8 +61,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.AbstractMap;
 
-import com.oreoredstone.orefish.procedures.FishTickProcProcedure;
-import com.oreoredstone.orefish.procedures.FishRightClickProcedure;
+import com.oreoredstone.orefish.procedures.IronFishRightClickProcedure;
 import com.oreoredstone.orefish.item.IronScaleItem;
 import com.oreoredstone.orefish.entity.renderer.IronFishRenderer;
 import com.oreoredstone.orefish.OreFishModElements;
@@ -226,24 +225,10 @@ public class IronFishEntity extends OreFishModElements.ModElement {
 			double z = this.getPosZ();
 			Entity entity = this;
 
-			FishRightClickProcedure.executeProcedure(
+			IronFishRightClickProcedure.executeProcedure(
 					Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
 							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 			return retval;
-		}
-
-		@Override
-		public void baseTick() {
-			super.baseTick();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-
-			FishTickProcProcedure.executeProcedure(Stream
-					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
-					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

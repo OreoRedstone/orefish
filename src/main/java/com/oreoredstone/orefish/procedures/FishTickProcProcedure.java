@@ -33,12 +33,12 @@ public class FishTickProcProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				OreFishMod.LOGGER.warn("Failed to load dependency world for procedure FishTickProc!");
+				OreFishMod.LOGGER.warn("Failed to load dependency world for procedure IronFishTick!");
 			return;
 		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				OreFishMod.LOGGER.warn("Failed to load dependency entity for procedure FishTickProc!");
+				OreFishMod.LOGGER.warn("Failed to load dependency entity for procedure IronFishTick!");
 			return;
 		}
 		IWorld world = (IWorld) dependencies.get("world");

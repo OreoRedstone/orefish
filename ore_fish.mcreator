@@ -5,7 +5,7 @@
       "type": "livingentity",
       "sortid": 1,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "iron_fish"
     },
     {
@@ -33,58 +33,6 @@
       "registry_name": "ore_fish_config",
       "metadata": {
         "dependencies": []
-      }
-    },
-    {
-      "name": "FishTickProc",
-      "type": "procedure",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "fish_tick_proc",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "FishRightClick",
-      "type": "procedure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": true,
-      "registry_name": "fish_right_click",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
       }
     },
     {
@@ -153,6 +101,28 @@
             "type": "entity"
           }
         ]
+      }
+    },
+    {
+      "name": "IronFishTick",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_fish_tick",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "IronFishRightClick",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "iron_fish_right_click",
+      "metadata": {
+        "dependencies": []
       }
     }
   ],
