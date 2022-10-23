@@ -124,6 +124,44 @@
       "metadata": {
         "dependencies": []
       }
+    },
+    {
+      "name": "GoldFish",
+      "type": "livingentity",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_fish"
+    },
+    {
+      "name": "GoldScale",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_scale"
+    },
+    {
+      "name": "GoldFishRightClick",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "GoldFishTick",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "gold_fish_tick",
+      "metadata": {
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [
@@ -143,13 +181,16 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.ore_fish.gold_scale": "Iron Scale",
       "entity.ore_fish.iron_fish": "Iron Fish",
       "effect.growing": "Growing",
-      "item.ore_fish.oak_fish_spawn_egg": "Iron Fish Spawn Egg",
+      "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
+      "item.ore_fish.gold_fish_spawn_egg": "Gold Fish Spawn Egg",
       "item.ore_fish.iron_scale": "Iron Scale",
       "item.ore_fish.oak_scale": "Oak Scale",
       "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
-      "entity.ore_fish.oak_fish": "Iron Fish"
+      "entity.ore_fish.oak_fish": "Oak Fish",
+      "entity.ore_fish.gold_fish": "Gold Fish"
     }
   },
   "foldersRoot": {
