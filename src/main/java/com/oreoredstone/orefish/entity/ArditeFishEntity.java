@@ -20,7 +20,9 @@ import net.minecraft.world.IWorldReader;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.pathfinding.SwimmerPathNavigator;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.network.IPacket;
@@ -30,6 +32,7 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
@@ -47,11 +50,19 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import java.util.stream.Stream;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.AbstractMap;
+
+import com.oreoredstone.orefish.procedures.ArditeFishTickProcedure;
+import com.oreoredstone.orefish.procedures.ArditeFishRightClickProcedure;
 import com.oreoredstone.orefish.item.ArditeScaleItem;
 import com.oreoredstone.orefish.entity.renderer.ArditeFishRenderer;
 import com.oreoredstone.orefish.OreFishModElements;
@@ -63,7 +74,7 @@ public class ArditeFishEntity extends OreFishModElements.ModElement {
 			.size(0.5f, 0.3f)).build("ardite_fish").setRegistryName("ardite_fish");
 
 	public ArditeFishEntity(OreFishModElements instance) {
-		super(instance, 24);
+		super(instance, 15);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ArditeFishRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
@@ -72,8 +83,7 @@ public class ArditeFishEntity extends OreFishModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ardite_fish_spawn_egg"));
+		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ardite_fish_spawn_egg"));
 	}
 
 	@SubscribeEvent
@@ -203,6 +213,36 @@ public class ArditeFishEntity extends OreFishModElements.ModElement {
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			super.func_230254_b_(sourceentity, hand);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+
+			ArditeFishRightClickProcedure.executeProcedure(
+					Stream.of(new AbstractMap.SimpleEntry<>("entity", entity), new AbstractMap.SimpleEntry<>("sourceentity", sourceentity))
+							.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+			return retval;
+		}
+
+		@Override
+		public void baseTick() {
+			super.baseTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+
+			ArditeFishTickProcedure.executeProcedure(Stream
+					.of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+							new AbstractMap.SimpleEntry<>("z", z), new AbstractMap.SimpleEntry<>("entity", entity))
+					.collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
 		}
 
 		@Override

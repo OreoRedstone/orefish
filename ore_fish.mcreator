@@ -14,7 +14,7 @@
       "type": "item",
       "sortid": 2,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "iron_scale",
       "path": "~/IronFish"
     },
@@ -103,7 +103,7 @@
       "type": "procedure",
       "sortid": 18,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "iron_fish_tick",
       "metadata": {
         "dependencies": []
@@ -136,7 +136,7 @@
       "type": "item",
       "sortid": 21,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "gold_scale",
       "path": "~/GoldFish"
     },
@@ -202,7 +202,7 @@
       "type": "item",
       "sortid": 27,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "ardite_scale",
       "path": "~/ArditeFish"
     },
@@ -244,9 +244,387 @@
       "type": "item",
       "sortid": 31,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "coal_scale",
       "path": "~/CoalFish"
+    },
+    {
+      "name": "CobaltFish",
+      "type": "livingentity",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_fish",
+      "path": "~/CobaltFish"
+    },
+    {
+      "name": "CobaltFishRightClick",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CobaltFish"
+    },
+    {
+      "name": "CobaltFishTick",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cobalt_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CobaltFish"
+    },
+    {
+      "name": "CobaltScale",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobalt_scale",
+      "path": "~/CobaltFish"
+    },
+    {
+      "name": "CopperFish",
+      "type": "livingentity",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_fish",
+      "path": "~/CopperFish"
+    },
+    {
+      "name": "CopperFishRightClick",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CopperFish"
+    },
+    {
+      "name": "CopperFishTick",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/CopperFish"
+    },
+    {
+      "name": "CopperScale",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_scale",
+      "path": "~/CopperFish"
+    },
+    {
+      "name": "DiamondFish",
+      "type": "livingentity",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_fish",
+      "path": "~/DiamondFish"
+    },
+    {
+      "name": "DiamondFishRightClick",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/DiamondFish"
+    },
+    {
+      "name": "DiamondFishTick",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "diamond_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/DiamondFish"
+    },
+    {
+      "name": "DiamondScale",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_scale",
+      "path": "~/DiamondFish"
+    },
+    {
+      "name": "DirtFish",
+      "type": "livingentity",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dirt_fish",
+      "path": "~/DirtFish"
+    },
+    {
+      "name": "DirtFishRightClick",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dirt_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/DirtFish"
+    },
+    {
+      "name": "DirtFishTick",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "dirt_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/DirtFish"
+    },
+    {
+      "name": "DirtScale",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_scale",
+      "path": "~/DirtFish"
+    },
+    {
+      "name": "IceFish",
+      "type": "livingentity",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ice_fish",
+      "path": "~/IceFish"
+    },
+    {
+      "name": "IceFishRightClick",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ice_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/IceFish"
+    },
+    {
+      "name": "IceFishTick",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ice_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/IceFish"
+    },
+    {
+      "name": "IceScale",
+      "type": "item",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_scale",
+      "path": "~/IceFish"
+    },
+    {
+      "name": "ManyllyumFish",
+      "type": "livingentity",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manyllyum_fish",
+      "path": "~/ManyllyumFish"
+    },
+    {
+      "name": "ManyllyumFishRightClick",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manyllyum_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ManyllyumFish"
+    },
+    {
+      "name": "ManyllyumFishTick",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "manyllyum_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ManyllyumFish"
+    },
+    {
+      "name": "ManyllyumScale",
+      "type": "item",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "manyllyum_scale",
+      "path": "~/ManyllyumFish"
+    },
+    {
+      "name": "QuartzFish",
+      "type": "livingentity",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "quartz_fish",
+      "path": "~/QuartzFish"
+    },
+    {
+      "name": "QuartzFishRightClick",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "quartz_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/QuartzFish"
+    },
+    {
+      "name": "QuartzFishTick",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "quartz_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/QuartzFish"
+    },
+    {
+      "name": "QuartzScale",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quartz_scale",
+      "path": "~/QuartzFish"
+    },
+    {
+      "name": "StoneFish",
+      "type": "livingentity",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_fish",
+      "path": "~/StoneFish"
+    },
+    {
+      "name": "StoneFishRightClick",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/StoneFish"
+    },
+    {
+      "name": "StoneFishTick",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/StoneFish"
+    },
+    {
+      "name": "StoneScale",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_scale",
+      "path": "~/StoneFish"
+    },
+    {
+      "name": "ZincFish",
+      "type": "livingentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zinc_fish",
+      "path": "~/ZincFish"
+    },
+    {
+      "name": "ZincFishRightClick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zinc_fish_right_click",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ZincFish"
+    },
+    {
+      "name": "ZincFishTick",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "zinc_fish_tick",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/ZincFish"
+    },
+    {
+      "name": "ZincScale",
+      "type": "item",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zinc_scale",
+      "path": "~/ZincFish"
     }
   ],
   "variable_elements": [
@@ -266,22 +644,49 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "entity.ore_fish.ardite_fish": "Ardite Fish",
-      "entity.ore_fish.iron_fish": "Iron Fish",
+      "item.ore_fish.cobalt_scale": "Cobalt Scale",
       "effect.growing": "Growing",
-      "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
       "item.ore_fish.gold_fish_spawn_egg": "Gold Fish Spawn Egg",
-      "item.ore_fish.coal_fish_spawn_egg": "Coal Fish Spawn Egg",
-      "item.ore_fish.iron_scale": "Iron Scale",
+      "item.ore_fish.oak_fish_spawn_egg": "Oak Fish Spawn Egg",
       "item.ore_fish.oak_scale": "Oak Scale",
+      "entity.ore_fish.copper_fish": "Copper Fish",
       "entity.ore_fish.oak_fish": "Oak Fish",
-      "item.ore_fish.gold_scale": "Iron Scale",
+      "item.ore_fish.diamond_scale": "Diamond Scale",
+      "entity.ore_fish.manyllyum_fish": "Manyllyum Fish",
+      "item.ore_fish.manyllyum_scale": "Manyllyum Scale",
+      "item.ore_fish.gold_scale": "Gold Scale",
+      "entity.ore_fish.diamond_fish": "Diamond Fish",
       "item.ore_fish.ardite_fish_spawn_egg": "Ardite Fish Spawn Egg",
+      "entity.ore_fish.ice_fish": "Ice Fish",
+      "entity.ore_fish.cobalt_fish": "Cobalt Fish",
+      "item.ore_fish.stone_fish_spawn_egg": "Stone Fish Spawn Egg",
+      "item.ore_fish.dirt_fish_spawn_egg": "Dirt Fish Spawn Egg",
+      "item.ore_fish.zinc_fish_spawn_egg": "Zinc Fish Spawn Egg",
+      "item.ore_fish.quartz_scale": "Quartz Scale",
+      "item.ore_fish.manyllyum_fish_spawn_egg": "Manyllyum Fish Spawn Egg",
+      "item.ore_fish.zinc_scale": "Zinc Scale",
+      "entity.ore_fish.gold_fish": "Gold Fish",
+      "entity.ore_fish.ardite_fish": "Ardite Fish",
+      "item.ore_fish.stone_scale": "Stone Scale",
+      "item.ore_fish.copper_fish_spawn_egg": "Copper Fish Spawn Egg",
+      "entity.ore_fish.iron_fish": "Iron Fish",
+      "item.ore_fish.cobalt_fish_spawn_egg": "Cobalt Fish Spawn Egg",
+      "item.ore_fish.diamond_fish_spawn_egg": "Diamond Fish Spawn Egg",
+      "item.ore_fish.coal_fish_spawn_egg": "Coal Fish Spawn Egg",
+      "item.ore_fish.copper_scale": "Copper Scale",
+      "item.ore_fish.iron_scale": "Iron Scale",
+      "item.ore_fish.ice_scale": "Ice Scale",
       "entity.ore_fish.coal_fish": "Coal Fish",
-      "item.ore_fish.ardite_scale": "Iron Scale",
-      "item.ore_fish.coal_scale": "Iron Scale",
+      "entity.ore_fish.quartz_fish": "Quartz Fish",
+      "item.ore_fish.quartz_fish_spawn_egg": "Quartz Fish Spawn Egg",
+      "item.ore_fish.ardite_scale": "Ardite Scale",
+      "entity.ore_fish.dirt_fish": "Dirt Fish",
+      "entity.ore_fish.stone_fish": "Stone Fish",
+      "item.ore_fish.coal_scale": "Coal Scale",
       "item.ore_fish.iron_fish_spawn_egg": "Iron Fish Spawn Egg",
-      "entity.ore_fish.gold_fish": "Gold Fish"
+      "item.ore_fish.dirt_scale": "Dirt Scale",
+      "entity.ore_fish.zinc_fish": "Zinc Fish",
+      "item.ore_fish.ice_fish_spawn_egg": "Ice Fish Spawn Egg"
     }
   },
   "foldersRoot": {
@@ -305,6 +710,42 @@
       },
       {
         "name": "CoalFish",
+        "children": []
+      },
+      {
+        "name": "CobaltFish",
+        "children": []
+      },
+      {
+        "name": "CopperFish",
+        "children": []
+      },
+      {
+        "name": "DiamondFish",
+        "children": []
+      },
+      {
+        "name": "DirtFish",
+        "children": []
+      },
+      {
+        "name": "IceFish",
+        "children": []
+      },
+      {
+        "name": "ManyllyumFish",
+        "children": []
+      },
+      {
+        "name": "QuartzFish",
+        "children": []
+      },
+      {
+        "name": "StoneFish",
+        "children": []
+      },
+      {
+        "name": "ZincFish",
         "children": []
       }
     ]
