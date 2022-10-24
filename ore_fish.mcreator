@@ -31,7 +31,7 @@
       "type": "item",
       "sortid": 14,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "oak_scale",
       "path": "~/OakFish"
     },

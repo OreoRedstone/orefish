@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "oak_scale",
+    "texture": "oakscale",
     "customModelName": "Normal",
     "name": "Oak Scale",
     "rarity": "COMMON",
