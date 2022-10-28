@@ -91,7 +91,7 @@ public StoneFishEntity(OreFishModElements instance)
 @SubscribeEvent
     public void addFeatureToBiomes(BiomeLoadingEvent event)
 {
-		event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		//event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
 }
 
 @Override

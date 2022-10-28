@@ -114,7 +114,6 @@ public class CoalFishTickProcedure {
 								if (world instanceof World && !world.isRemote()) {
 									ItemEntity entityToSpawn = new ItemEntity((World) world, entity.lastTickPosX, entity.lastTickPosY, entity.lastTickPosZ, new ItemStack(CoalScaleItem.block));
 									entityToSpawn.setPickupDelay((int) 0);
-									entityToSpawn.setNoDespawn();
 									world.addEntity(entityToSpawn);
 								}
 							}
